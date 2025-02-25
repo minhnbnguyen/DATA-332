@@ -80,6 +80,6 @@ df_driver_pay <- df %>%
   )
 
 ggplot(df_driver_pay, aes(x = driver_fullname, y = total_pay)) +
-  geom_col() +
+  geom_col(fill = "blue") +
   theme(axis.text = element_text(angle = 45, vjust = .5, hjust = 1))
 #Bill Burr gets paid the most
