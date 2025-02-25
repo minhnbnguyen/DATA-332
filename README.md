@@ -2,7 +2,7 @@
 ### Data Management Systems Design and Development  
 
 ## Introduction  
-Welcome to the **DATA 332** repository! This repository contains the projects and assignments completed for the **Management Information Systems II: Data Management Systems Design and Development** course at Augustana College. The class focuses on analyzing business processes, data modeling, and developing database applications using **R, RStudio, and Microsoft Office tools**.  
+Welcome to my **DATA 332** repository! This repository contains the projects and assignments completed for the **Management Information Systems II: Data Management Systems Design and Development** course at Augustana College. The class focuses on analyzing business processes, data modeling, and developing database applications using **R, RStudio, and Microsoft Office tools**.  
 
 ## Course Overview  
 This course covers:  
