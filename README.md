@@ -45,4 +45,4 @@ Each project contributes to the final grade, with a focus on:
 4. **Run the applications and explore the data models**  
 
 ## Author  
-This repository is maintained by **[Your Name]**, based on coursework taught by **Professor John Brosius**.  
+This repository is maintained by **[Minh Nguyen]**, based on coursework taught by **Professor John Brosius**.  
