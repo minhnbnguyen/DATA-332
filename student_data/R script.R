@@ -30,7 +30,7 @@ df_student_by_major <- df %>%
 ggplot(df_student_by_major, aes(x = Title, y = student_num)) +
   geom_col(fill = "blue") +
   theme(axis.text = element_text(angle = 45, vjust = .5, hjust = 1)) +
-  ggtitle("Number of Majors")
+  ggtitle("#Majors")
 
 #Chart on the birth year of the student
 df$birth_year <- as.numeric(format(df$Birth.Date, "%Y"))
@@ -42,7 +42,7 @@ df_student_by_birth_year <- df %>%
 df_student_by_birth_year %>%
   ggplot( aes(x=birth_year, y=student_num)) +
   geom_line() +
-  ggtitle("Student Birth Year")
+  ggtitle("#Student Birth Year")
 
 #Chart on the generation of the student
 #gen bucket
@@ -53,7 +53,7 @@ df_student_by_birth_year$gen_bucket <- cut(df_student_by_birth_year$birth_year,
 
 ggplot(df_student_by_birth_year, aes(fill=Title, y=student_num, x=gen_bucket)) + 
   geom_bar(position="stack", stat="identity") +
-  ggtitle("Student by generation")
+  ggtitle("#student by generation")
 
 #Total cost per major, segment by payment plan
 df_cost <- df %>%
