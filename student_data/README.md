@@ -1,11 +1,11 @@
 # <STUDENT DATA>
 
-## Description
+## STUDENT DATA
 By Minh Nguyen
 
 This project explores the student dataset to give insights into their biographic and majors. 
 
-1. How many students are their in each major
+**1. How many students are their in each major**
 
 ![Histogram by Majors](https://github.com/minhnbnguyen/DATA-332/blob/main/student_data/chart/%23majors%20histogram.png)
 
