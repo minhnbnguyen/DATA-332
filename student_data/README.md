@@ -9,6 +9,5 @@ This project explores the student dataset to give insights into their biographic
 
 ![Histogram by Majors](https://github.com/minhnbnguyen/DATA-332/blob/main/student_data/chart/%23majors%20histogram.png)
 
-👉 Data Science attracts the largest amount of students, followed by Computer Science and Digital Marketing.
-***
+👉 Data Science attracts the largest amount of students, followed by Computer Science and Digital Marketing
 👉 We can see a trend of students majoring in STEM related majors (Computer Science, Data Science, and Digital Security)
