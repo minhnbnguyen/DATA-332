@@ -1,6 +1,6 @@
-# <STUDENT DATA>
+# STUDENT DATA
 
-## STUDENT DATA
+## DESCRIPTION
 By Minh Nguyen
 
 This project explores the student dataset to give insights into their biographic and majors. 
