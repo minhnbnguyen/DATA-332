@@ -20,3 +20,7 @@ matrix(hand2, ncol = 2, byrow = TRUE)
 #Exercise 4
 card <- c("ace","hearts",1)
 card
+
+#Exercise 5
+card <- list("ace","hearts",1)
+card
