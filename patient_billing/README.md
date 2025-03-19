@@ -7,7 +7,7 @@ This project explores the clinic dataset from Kaggle to give insights into the c
 
 **1. Reason for Visit based on walk in or not?**
 
-![Chase Banner]([https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/new-york-us-march-2023-600nw-2292083683.webp])
+![Chase Banner](https://github.com/minhnbnguyen/DATA-332/blob/main/patient_billing/graph/walkin%20or%20not.png)
 
 👉 Generally, patient prefer to schedule appointment than walk-in. Except in October
 
