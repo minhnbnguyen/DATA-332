@@ -1,4 +1,4 @@
-# JP Morgan Chase Consumer Complaint Analysis 
+# JP Morgan Chase Consumer Complaint Analysis 🏦
 
 ## By Minh Nguyen ☀️
 
@@ -76,11 +76,15 @@ complaints_tibble$Date.sent.to.company <- as.Date(complaints_tibble$Date.sent.to
 ```
 
 ## Data Summary
-Our dataset spans nearly two centuries (1821-2017) and includes specimens from:
-- United Kingdom (largest sample)
-- Republic of Ireland
-- United States
-- Canada (smallest sample)
+- Our dataset spans nearly two years (Mar 2015 - Sep 2016) with 670598 complaints
+- These complaints come from 3933 us banks 🏦
+- The top 5 companies with most complaints are:
+  1. Bank of America
+  2. Wels Fargo & Company
+  3. Equifax
+  4. Experian
+  5. JPMorgan Chase & Co.
+👉 In the following analysis, we would focus on JPMorgan Chase only
 
 ## Key Findings
 
