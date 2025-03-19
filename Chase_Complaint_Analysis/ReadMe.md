@@ -1,8 +1,8 @@
-# JP Morgan Chase Consumer Complaint Analysis 🦋
+# JP Morgan Chase Consumer Complaint Analysis 
 
 ## By Minh Nguyen ☀️
 
-![Reason for Visit based on walk in or not](https://github.com/minhnbnguyen/DATA-332/blob/main/patient_billing/graph/walkin%20or%20not.png)
+![Chase Banner](https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/Font-of-the-Chase-logo.jpg)
 
 ## Introduction
 This project analyzes the customer narrative complaint from JP Morgan Chase to find relationship between customer's emotion with complaint dispute rate. In this project, I compare the emotional content of disputed vs. non-disputed complaints to identify emotional patterns that might predict complaint resolution difficulty.
