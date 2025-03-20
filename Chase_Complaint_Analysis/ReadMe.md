@@ -89,7 +89,7 @@ complaints_tibble$Date.sent.to.company <- as.Date(complaints_tibble$Date.sent.to
 ## Key Findings
 
 ### High-level view of the customer complaint
-![Word Cloud]([https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/Font-of-the-Chase-logo.jpg](https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/wordcloud.png))
+![Word Cloud](https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/wordcloud.png])
 - The most common problem are likely related to wrong information, lost, or failed issue
 
 ### Net sentiment emotions related to each product
