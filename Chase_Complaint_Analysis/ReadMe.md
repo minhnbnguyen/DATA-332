@@ -76,8 +76,8 @@ complaints_tibble$Date.sent.to.company <- as.Date(complaints_tibble$Date.sent.to
 ```
 
 ## Data Summary
-- Our dataset spans nearly two years (Mar 2015 - Sep 2016) with 670598 complaints
-- These complaints come from 3933 us banks 🏦
+- Our dataset spans nearly two years (Mar 2015 - Sep 2016) with 670,598 complaints
+- These complaints come from 3,933 us banks 🏦
 - The top 5 companies with most complaints are:
   1. Bank of America
   2. Wels Fargo & Company
