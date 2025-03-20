@@ -29,7 +29,7 @@ Our dataset includes the following columns:
 - **Consumer.disputed.**: Whether if the consumer dispute the resolution or not
 - **Complaint.ID**: The unique identifier of each complaint
 
-## Data Cleaning Methodology To Ensure Tiday Data 🧹
+## Data Cleaning Methodology To Ensure Tidy Data 🧹
 
 ### Tag column include multiple variables
 - Split tag columns into seperate rows if there are more than 2 tags
@@ -84,6 +84,7 @@ complaints_tibble$Date.sent.to.company <- as.Date(complaints_tibble$Date.sent.to
   3. Equifax
   4. Experian
   5. JPMorgan Chase & Co.
+
 👉 In the following analysis, we would focus on JPMorgan Chase only
 
 ## Key Findings
