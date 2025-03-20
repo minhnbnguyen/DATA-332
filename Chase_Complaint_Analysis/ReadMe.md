@@ -117,7 +117,8 @@ Significant predictors are
 
 ### Validate Model with Chi-Square Test
 ![Validate](https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/ChiSquared.png)
-Conclusion: significant predictor are anger and trust 
+
+Conclusion: significant predictors are anger and trust 
 
 - Joy is significant in the coefficient test but not in the sequential test, suggesting it may share explanatory power with variables added earlier
 - Sadness is significant in the sequential test but not in the coefficient test
