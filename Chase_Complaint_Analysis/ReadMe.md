@@ -98,11 +98,13 @@ complaints_tibble$Date.sent.to.company <- as.Date(complaints_tibble$Date.sent.to
 - We can see the largest emotion gap is in other financial services product, following by credit card and bank account or services, debt collection is also observed with large gap
 - Since other financial services product is quite general, Chase should conduct more analysis on the credit card, bank account and debt collection product to identify the root cause that cause negative complaints.
 
-### Emotions relate to dispute and non-dispute complaints
+### Comparative Analysis using nrc sentiment
 ![Emotional content](https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/disputevsnondispute_emotion.png)
-- Butterflies from North America have larger wingspans than those from Europe
-- Statistical analysis confirms this difference is significant (p < 0.05)
+- Method: Compare the emotional content of disputed vs. non-disputed complaints
+- Goal: Identify emotional patterns that might predict complaint resolution difficulty
+- Result: Largest dispute ratio falls within negative and trust emotions
 
+  
 ## Perform statistical analysis to find correlation between emotion and dispute rate
 
 ### Run logistic regression
@@ -118,7 +120,10 @@ Significant predictors are
 ### Validate Model with Chi-Square Test
 ![Validate](https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/ChiSquared.png)
 
-Conclusion: significant predictors are anger and trust 
+Significant predictors are
+- Anger (p = 9.61e)
+- Trust (p = 3.79e)
+- Sadness (p = 0.01)
 
 - Joy is significant in the coefficient test but not in the sequential test, suggesting it may share explanatory power with variables added earlier
 - Sadness is significant in the sequential test but not in the coefficient test
