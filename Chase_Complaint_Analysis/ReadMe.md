@@ -109,10 +109,10 @@ complaints_tibble$Date.sent.to.company <- as.Date(complaints_tibble$Date.sent.to
 ![Logistic](https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/Regression.png)
 
 Significant predictors are
-- anger (p = 0.002522): positive relationship
-- joy (p = 0.01): negative relationship
-- trust (p = 0.000456): positive relationship
-- anticipation (p = 0.09): positive relationship
+- anger (p = 0.002522): positive relationship 💢
+- joy (p = 0.01): negative relationship 😊
+- trust (p = 0.000456): positive relationship 🙏🏻
+- anticipation (p = 0.09): positive relationship 😌
 
 
 ### Validate Model with Chi-Square Test
