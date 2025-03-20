@@ -42,7 +42,20 @@ cols_with_NA_text <- names(na_cols_logical)[na_cols_logical]
 complaints_tibble <- complaints_tibble %>%
   mutate(across(cols_with_NA_text, ~na_if(., "N/A")))
 
-# II. Sentiment Analysis on Chase's consumer complaint narrative
+# II. Data Summary
+# Data Summary Code
+
+# Count unique values in each column
+unique_counts <- sapply(complaints_tibble, function(x) length(unique(x)))
+print(unique_counts)
+
+# Find which company has the most records
+top_5_companies <- complaints_tibble %>%
+  count(Company, sort = TRUE) %>%  # Count records by country and sort
+  head(5)
+
+
+# III. Sentiment Analysis on JP Morgan Chase's consumer complaint narrative
 # a. High level overview
 # Use word cloud and sentiment bing
 get_sentiments("bing")
@@ -151,21 +164,6 @@ dispute_model <- glm(binary_dispute ~ anger + fear + joy + sadness + trust + sur
 # View model summary
 summary(dispute_model)
 
-# significant predictor
-# anger (p = 0.002522): positive relationship
-# joy (p = 0.01): negative relationship
-# trust (p = 0.000456): positive relationship -> need more research and validate
-# anticipation (p = 0.09): positive relationship -> need more research and validate
-
 # validate model with Chi-Squared Test 
 chisq_test <- anova(dispute_model, test = "Chisq")
 print(chisq_test)
-
-# Conclusion: significant predictor are anger and trust 
-# Joy is significant in the coefficient test but not in the sequential test, suggesting it may share explanatory power with variables added earlier
-# Sadness is significant in the sequential test but not in the coefficient test
-
-# For a more robust conclusion, I would suggest:
-# Focus on anger and trust as your primary findings since they are significant in both tests
-# Acknowledge joy as potentially important since it's significant when controlling for all variables
-# Consider whether to include sadness based on your research question and theoretical framework -> work backwards
