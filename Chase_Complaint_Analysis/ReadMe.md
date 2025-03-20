@@ -88,13 +88,15 @@ complaints_tibble$Date.sent.to.company <- as.Date(complaints_tibble$Date.sent.to
 
 ## Key Findings
 
-### Temporal Distribution
-- Most butterflies in this dataset were recorded in the 20th century
-- Peak recording periods were in the 1920s and 1960s
+### High-level view of the customer complaint
+![Word Cloud]([https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/Font-of-the-Chase-logo.jpg](https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/wordcloud.png))
+- The most common problem are likely related to wrong information, lost, or failed issue
 
-### Geographic Patterns
-- Specimens collected from two continents: Europe and North America
-- Gender distribution is relatively equal across regions
+### Net sentiment emotions related to each product
+![Net Sentiment](https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/netsentiment.png)
+- Net sentiment is the net emotion from each complaint (i.e net sentiment = positive - negative)
+- We can see the largest emotion gap is in other financial services product, following by credit card and bank account or services, debt collection is also observed with large gap
+- Since other financial services product is quite general, Chase should conduct more analysis on the credit card, bank account and debt collection product to identify the root cause that cause negative complaints.
 
 ### Wingspan Analysis
 - Butterflies from North America have larger wingspans than those from Europe
