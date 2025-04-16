@@ -5,6 +5,9 @@
 ## Introduction
 This project explores if the speed radar is effective or not. Speed radar catches the car speed. Our goal of the project is to see if the driver slow down after seeing their speed or not. We also want to analyze the brand and vehicle style associate with the speed
 
+INTERACT WITH OUR SHINY APP [HERE](https://nickhc41703.shinyapps.io/final/)!
+
+
 ## How we gather the data
 - We went 3 different places that have speed radars on different days and recorded the car brand, vehicle style, starting speed, if they slow down or not.
 - We also include the date and time.
@@ -56,5 +59,3 @@ Our dataset includes the following columns:
 - We decided to make a stacked bar chart and group the mph by every 5 miles for the x value and get the count of cars for the y value so that we can get a range of what mph range is most likely to slow down.
 - The speed range that slowed down the most was 16 - 20 mph.
 - It is important to note that the speed limit for that spot was 30 mph, and there were no cars that slowed down if they were going past the 30 mph speed limit.
-
-
