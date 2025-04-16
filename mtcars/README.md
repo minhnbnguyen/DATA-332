@@ -3,13 +3,16 @@
 ## By Nick Camacho, Zoey Do, Minh Nguyen ☀️
 
 ## Introduction
-- bla bla
+This project explores if the speed radar is effective or not. Speed radar catches the car speed. Our goal of the project is to see if the driver slow down after seeing their speed or not. We also want to analyze the brand and vehicle style associate with the speed
 
 ## How we gather the data
-- bla bla
+- We went 3 different places that have speed radars on different days and recorded the car brand, vehicle style, starting speed, if they slow down or not.
+- We also include the date and time.
 
 # How our team communicate
-- Via Snapchat and Gmail
+- We communicate daily via Snapchat.
+- We also use Gmail to send our working R file and analysis to share with each other.
+- We also met with each other twice outside of class to go over the project and the presentation.
 
 ## Data Dictionary 📖
 Our dataset includes the following columns:
