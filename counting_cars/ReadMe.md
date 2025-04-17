@@ -39,7 +39,7 @@ Our dataset includes the following columns:
 ## Key Findings
 
 ### Car Brand Analysis
-![Word Cloud](https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/wordcloud.png)
+![Word Cloud](https://github.com/minhnbnguyen/DATA-332/blob/main/counting_cars/graphs/car_brand.png)
 - The chart shows Ford is the most frequently observed brand with 42 cars, followed by Chevrolet (31) and Honda (21).
 - Brands like Lexus, Pontiac, and Prius appear the least, with 3 times in total.
 - This indicates that Ford and Chevrolet dominate the traffic in the observed area.
@@ -47,7 +47,7 @@ Our dataset includes the following columns:
 
 
 ### Vehicle Style Analysis
-![Net Sentiment](https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/netsentiment.png)
+![Net Sentiment](https://github.com/minhnbnguyen/DATA-332/blob/main/counting_cars/graphs/vehicle_style.png)
 - The chart shows that SUVs are the most common vehicle type with 121 cars, followed by sedans (67) and pickup trucks (24).
 - Other styles like hatchbacks, bugs, and coupes the least, appear 8 times in total.
 - This suggests SUVs and sedans make up the majority of vehicles observed in the area.
@@ -55,7 +55,7 @@ Our dataset includes the following columns:
 
 
 ### Speed Analysis
-![Emotional content](https://github.com/minhnbnguyen/DATA-332/blob/main/Chase_Complaint_Analysis/visualization/disputevsnondispute_emotion.png)
+![Emotional content](https://github.com/minhnbnguyen/DATA-332/blob/main/counting_cars/graphs/if_slow_down.png)
 - We decided to make a stacked bar chart and group the mph by every 5 miles for the x value and get the count of cars for the y value so that we can get a range of what mph range is most likely to slow down.
 - The speed range that slowed down the most was 16 - 20 mph.
 - It is important to note that the speed limit for that spot was 30 mph, and there were no cars that slowed down if they were going past the 30 mph speed limit.
