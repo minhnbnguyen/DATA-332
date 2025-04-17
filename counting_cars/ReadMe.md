@@ -5,7 +5,7 @@
 ## Introduction
 This project explores if the speed radar is effective or not. Speed radar catches the car speed. Our goal of the project is to see if the driver slow down after seeing their speed or not. We also want to analyze the brand and vehicle style associate with the speed
 
-INTERACT WITH OUR SHINY APP [HERE](https://nickhc41703.shinyapps.io/final/)!
+INTERACT WITH OUR SHINY APP [HERE](https://minhnguyen22.shinyapps.io/counting_cars/)!
 
 
 ## How we gather the data
