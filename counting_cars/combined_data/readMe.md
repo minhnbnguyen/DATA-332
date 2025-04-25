@@ -34,7 +34,7 @@ Our dataset includes the following columns:
 
 
 ### Vehicle Style Analysis
-![Net Sentiment](https://github.com/minhnbnguyen/DATA-332/blob/main/counting_cars/graphs/vehicle_style.png)
+![Net Sentiment](https://github.com/minhnbnguyen/DATA-332/blob/main/counting_cars/combined_data/graphs/body_type.png)
 - The chart shows that SUVs are the most common vehicle type with nearly 400 cars, followed by sedans (300) and pickup trucks/trucks (120).
 - Other styles like hatchbacks, bugs, and coupes the least.
 - This suggests SUVs and sedans make up the majority of vehicles observed in the area.
@@ -42,7 +42,7 @@ Our dataset includes the following columns:
 
 
 ### Speed Analysis
-![Emotional content](https://github.com/minhnbnguyen/DATA-332/blob/main/counting_cars/graphs/if_slow_down.png)
+![Emotional content](https://github.com/minhnbnguyen/DATA-332/blob/main/counting_cars/combined_data/graphs/time_of_day.png)
 - We decided to make a stacked bar chart and group the mph by every 5 miles for the x value and get the count of cars for the y value
 - Therefore, we can get a range of what mph range is most likely to slow down.
 - The speed range that slowed down the most was 26-30 mph.
