@@ -24,7 +24,6 @@ Our dataset includes the following columns:
 - **initial_speed**: first observed car speed
 - **slow_down**: whether the car slow down after seeing the sign or not
 - **body_type**: car style
-- **vehicle_style**: Car style
 
 ## My Cleaning Process 🧹
 
@@ -127,11 +126,11 @@ print(unique_body_type)
 
 ## Reflection
 
-# What I learned in general
+### What I learned in general
 - How to deploy a shiny app and the importance of file organization. I was struggling to deploy the app due to mismatch in my file path. It was painful 🥲.
 - Importance of planning ahead. Instead of blindly cleaning each file, I set up a clear data structure before hand following the tidy data guideline. This serves as a guiding map and save so much time!
 
-# What I learned about collecting data
+### What I learned about collecting data
 - Cannot trust people about data gathering 😤 Even when we have talked and confirmed the structure before, they still made crazy changes. 
 - For example, even though we all agreed to have at least the time/date column, a lot of group doesn't have it. They also don't record enough 225 cars.
 - Moreover, the way we format time and date are all different, thus it has to be managed independently
