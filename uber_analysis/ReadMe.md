@@ -7,7 +7,7 @@ This project analyzes the Uber Trip Data in NYC from April to September 2014.
 
 INTERACT WITH MY SHINY APP [HERE](https://minhnguyen22.shinyapps.io/uber_analysis/)!
 
-## Data Cleaning 🧹
+### Data Cleaning 🧹
 Due to the large size of csv files, I couldn't deploy it to Shiny free version. Thus I compress csv files into 1 rds file to reduce size. I then perform data cleaning in that rds datafile also.
 ```r
 # Read excel data
@@ -40,7 +40,7 @@ dataset <- dataset %>%
 saveRDS(dataset, 'data/uber_dataset.rds', compress = TRUE)
 ```
 
-## Line Graph Sample Code
+### Line Graph Sample Code
 ```r
   output$trips_by_month <- renderPlot({
     dataset %>%
@@ -53,7 +53,7 @@ saveRDS(dataset, 'data/uber_dataset.rds', compress = TRUE)
         y = "Number of Trips")     
   })
 ```
-## Bar Graph Sample Code
+### Bar Graph Sample Code
 I stole the code from their Shiny app and edit it
 ```r
   output$trips_by_day_month <- renderPlot({
@@ -69,7 +69,7 @@ I stole the code from their Shiny app and edit it
         fill = "Day of Week")
   })
 ```
-## Heat Map Sample Code
+### Heat Map Sample Code
 ```r
   output$trips_by_base_weekday <- renderPlot({
     dataset %>%
@@ -84,7 +84,7 @@ I stole the code from their Shiny app and edit it
         fill = "Number of Trips")
   })
 ```
-## Pivot Table Sample Code
+### Pivot Table Sample Code
 ```r
   output$trips_by_hour_pivot <- renderDataTable({
     dataset %>%
