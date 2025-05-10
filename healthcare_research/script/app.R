@@ -8,6 +8,9 @@ library(tidyr)
 library(DT)
 library(scales)
 #install.packages(c("maps", "mapproj", "viridis"))
+library(maps)
+library(mapproj)
+library(viridis)
 
 # Read and clean data
 dataset <- readRDS("cleaned_nursing.rds")
@@ -65,7 +68,7 @@ ui <- navbarPage("Nursing Home Industry Research",
                             # Financial KPI table at the top
                             fluidRow(
                               column(12,
-                                     h4("Financial KPI"),
+                                     h4("Financial KPI (2015-2021)"),
                                      tableOutput("financial_table")
                               )
                             ),
@@ -403,16 +406,32 @@ server <- function(input, output, tab) {
         total_income_annualized = as.numeric(total_income_annualized),
         gross_revenue_annualized = as.numeric(gross_revenue_annualized),
         net_income_from_patients_annualized = as.numeric(net_income_from_patients_annualized),
-        net_profit_margin = total_income_annualized/gross_revenue_annualized * 100,
-        net_operating_margin = net_income_from_patients_annualized / gross_revenue_annualized * 100,
-        return_on_revenue = total_income_annualized / gross_revenue_annualized * 100
+        
+        # Prevent division by zero with case_when
+        net_profit_margin = case_when(
+          is.na(gross_revenue_annualized) | gross_revenue_annualized == 0 ~ NA_real_,
+          TRUE ~ total_income_annualized/gross_revenue_annualized * 100
+        ),
+        
+        net_operating_margin = case_when(
+          is.na(gross_revenue_annualized) | gross_revenue_annualized == 0 ~ NA_real_,
+          TRUE ~ net_income_from_patients_annualized / gross_revenue_annualized * 100
+        )
       ) %>%
       summarise(
-        Gross_Revenue = paste0("$",comma(round(sum(gross_revenue_annualized, na.rm = TRUE),2))),
-        Total_Income = paste0("$",comma(round(sum(total_income_annualized, na.rm = TRUE),2))),
-        Net_Profit_Margin = paste0(round(mean(net_profit_margin, na.rm = TRUE), 2), "%"),
-        Net_Operating_Margin = paste0(round(mean(net_operating_margin, na.rm = TRUE), 2), "%"),
-        Return_On_Revenue = paste0(round(mean(return_on_revenue, na.rm = TRUE), 2), "%")
+        Gross_Revenue = paste0("$", scales::comma(round(sum(gross_revenue_annualized, na.rm = TRUE), 0))),
+        Total_Income = paste0("$", scales::comma(round(sum(total_income_annualized, na.rm = TRUE), 0))),
+        
+        # Handle case where all values might be NA
+        Net_Profit_Margin = case_when(
+          all(is.na(net_profit_margin)) ~ "N/A",
+          TRUE ~ paste0(round(mean(net_profit_margin, na.rm = TRUE), 2), "%")
+        ),
+        
+        Net_Operating_Margin = case_when(
+          all(is.na(net_operating_margin)) ~ "N/A",
+          TRUE ~ paste0(round(mean(net_operating_margin, na.rm = TRUE), 2), "%")  
+        )
       )
   })
   
